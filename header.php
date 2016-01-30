@@ -27,7 +27,7 @@
     <a href="#">The Oak Shoppe</a>
   </div>
 </nav>
-<header id="header" role="banner" class="top-header">
+<header id="header" role="banner" class="top-header dark-bg">
   <img src="<?= get_template_directory_uri()?>/library/images/header.jpg?>" alt="" />
 </header>
 <div class="nav-links detached-nav-links">
@@ -36,4 +36,4 @@
   <a href="#">All These & More</a>
   <a href="#">The Oak Shoppe</a>
 </div>
-<div id="container">
+<div id="container" class="page-divider">
