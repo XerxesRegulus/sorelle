@@ -7,8 +7,8 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<nav id="hamburger-menu" role="navigation">
-  <button class="c-hamburger c-hamburger--htx">
+<nav role="navigation">
+  <button class="c-hamburger c-hamburger--htx" id="hamburger-menu">
   <span>toggle menu</span>
   </button>
   <div class="nav-social-icons">

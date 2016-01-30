@@ -10,4 +10,42 @@
     </div>
   </article>
 </section>
+<section class="index-magazine-posts dark-bg">
+  <div class="magazine-posts-header">
+    <h2>Volume 03</h2>
+    <p >contents</p>
+  </div>
+  <article class="index-magazine-card">
+    <div class="index-magazine-card-contents">
+      <div class="image-container">
+        <img src="<?= get_template_directory_uri()?>/library/images/magazine-image.jpg?>" alt="" />
+      </div>
+      <div class="content-list">
+        <p class="title">Cayman Islands | Carribean</p>
+        <ul>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <article class="index-magazine-card">
+    <div class="index-magazine-card-contents">
+      <div class="image-container">
+        <img src="<?= get_template_directory_uri()?>/library/images/magazine-image.jpg?>" alt="" />
+      </div>
+      <div class="content-list">
+        <p class="title">Cayman Islands | Carribean</p>
+        <ul>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+          <li><p><a href="#">Cayman Islands</a> | Carribean Cruise</p></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
 <?php get_footer(); ?>
