@@ -351,6 +351,30 @@ nav {
   text-transform: uppercase;
 }
 
+.index-instagram-wall {
+  background: #fbfbfb;
+}
+
+.index-instagram-wall img {
+  width: 100%;
+}
+
+.index-instagram-wall .header {
+  text-align: center;
+  padding: 35px 0;
+}
+.index-instagram-wall .header p {
+  padding: 7px 0;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  display: inline-block;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.index-instagram-wall .header i {
+  margin: 0 14px 0 7px;
+}
+
 @media (min-width: 48em) {
   .c-hamburger {
     display: none;
