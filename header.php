@@ -27,7 +27,13 @@
     <a href="#">The Oak Shoppe</a>
   </div>
 </nav>
-<header id="header" role="banner">
-
+<header id="header" role="banner" class="top-header">
+  <img src="<?= get_template_directory_uri()?>/library/images/header.jpg?>" alt="" />
 </header>
+<div class="nav-links detached-nav-links">
+  <a href="#">The Gypsy Ninja</a>
+  <a href="#">Life and Adventure Diary</a>
+  <a href="#">All These & More</a>
+  <a href="#">The Oak Shoppe</a>
+</div>
 <div id="container">

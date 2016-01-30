@@ -144,6 +144,11 @@ nav {
 .nav-links {
   display: none;
   text-align: center;
+}
+
+.detached-nav-links {
+  display: block;
+  background: #fbfbfb;
   border-bottom: 1px solid rgb(190, 190, 190);
 }
 
@@ -161,6 +166,14 @@ nav {
   color: #bebebe;
 }
 
+.top-header {
+  background: rgb(237, 237, 237);
+}
+
+.top-header img {
+  width: 100%;
+  margin: 45px 0;
+}
 
 @media (min-width: 48em) {
   .c-hamburger {
@@ -179,7 +192,7 @@ nav {
 
   .nav-links {
     display: block;
-    padding: 24px;
+    padding: 14px;
   }
 
   .nav-links a {
