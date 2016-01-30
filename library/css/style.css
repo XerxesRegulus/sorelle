@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Hamburger Code */
+.c-hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #bebebe;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #bebebe;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+/* NAVIGATION */
+/* Social Icons */
+nav {
+  background: #fbfbfb;
+}
+.nav-social-icons {
+  color: #bebebe;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+}
+.nav-social-icons a {
+  margin-right: 14px;
+  transition: 0.25s all ease-in-out;
+}
+.nav-social-icons a:hover {
+  color: #a2a2a2;
+}
+
+.nav-social-icons a i {
+  font-size: 13px;
+}
+
+.nav-main-title {
+  padding: 20px 0 60px 0;
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.nav-main-title h1 {
+  letter-spacing: 5px;
+}
+
+.nav-links {
+  display: none;
+  text-align: center;
+}
+
+.detached-nav-links {
+  display: block;
+  background: #fbfbfb;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.nav-links a {
+  color: #202020;
+  margin: 21px 0;
+  text-transform: uppercase;
+  transition: 0.25s all ease-in-out;
+  font-size: 12px;
+  width: 100%;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: #bebebe;
+}
+
+.top-header {
+  background: rgb(237, 237, 237);
+}
+
+.top-header img {
+  width: 100%;
+  margin: 45px 0;
+}
+
+@media (min-width: 48em) {
+  .c-hamburger {
+    display: none;
+  }
+
+  .nav-social-icons {
+    position: absolute;
+    top: 55px;
+    left: 11%;
+  }
+
+  .nav-main-title {
+    padding: 45px 0;
+  }
+
+  .nav-links {
+    display: block;
+    padding: 14px;
+  }
+
+  .nav-links a {
+    margin: 0px 7px;
+    width: auto;
+    display: inline;;
+  }
+
+/* tablet css, will inherit styles from mobile */
+}
+@media (min-width: 80em) {
+/* desktop css, will inherit styles from mobile and tablet */
+}

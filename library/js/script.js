@@ -1,3 +1,10 @@
+jQuery(document).ready(function($) {
+  $('#hamburger-menu').click(function(){
+    $('#nav-links').slideToggle();
+  });
+});
+
+
 (function() {
   "use strict";
   var toggles = document.querySelectorAll(".c-hamburger");
@@ -14,9 +21,3 @@
     });
   }
 })();
-
-$(document).ready(function(){
-  $('#hamburger-menu').click(function(){
-    $('#nav-menu').toggleSlide();
-  });
-});

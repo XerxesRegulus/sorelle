@@ -3,21 +3,37 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri()?>/library/css/style.css?>" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-<section id="branding">
-<div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>
-<div id="site-description"><?php bloginfo( 'description' ); ?></div>
-</section>
-<nav id="menu" role="navigation">
-<div id="search">
-<?php get_search_form(); ?>
-</div>
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+<nav id="hamburger-menu" role="navigation">
+  <button class="c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+  </button>
+  <div class="nav-social-icons">
+    <a href="#"><i class="ion-social-instagram-outline"></i></a>
+    <a href="#"><i class="ion-social-twitter"></i></a>
+    <a href="#"><i class="ion-social-facebook"></i></a>
+    <a href="#"><i class="ion-social-pinterest"></i></a>
+  </div>
+  <div class="nav-main-title">
+    <h1>Elyne Villamor</h1>
+  </div>
+  <div id="nav-links" class="nav-links">
+    <a href="#">The Gypsy Ninja</a>
+    <a href="#">Life and Adventure Diary</a>
+    <a href="#">All These & More</a>
+    <a href="#">The Oak Shoppe</a>
+  </div>
 </nav>
+<header id="header" role="banner" class="top-header">
+  <img src="<?= get_template_directory_uri()?>/library/images/header.jpg?>" alt="" />
 </header>
+<div class="nav-links detached-nav-links">
+  <a href="#">The Gypsy Ninja</a>
+  <a href="#">Life and Adventure Diary</a>
+  <a href="#">All These & More</a>
+  <a href="#">The Oak Shoppe</a>
+</div>
 <div id="container">
