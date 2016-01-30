@@ -48,4 +48,12 @@
     </div>
   </article>
 </section>
+<section class="index-instagram-wall">
+  <article>
+      <div class="header">
+        <p><i class="ion-social-instagram-outline"></i>THEFLAGPURSUIT</p>
+      </div>
+      <img src="<?= get_template_directory_uri()?>/library/images/theflagpursuit.jpg?>" alt="" class="wall-image" />
+  </article>
+</section>
 <?php get_footer(); ?>
